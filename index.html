@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <diV class="a">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="registration/index.html">Registration Form </a></div>
+        <div><a href="about/index.html">About</a></div>
+        <div class="search">
+        <input type="search" placeholder="🔍search" >
+        </div>
+        <div class="dark" id="btn" onclick="darkmode()">Dark</div>
+    </diV>
+    <div class="home">
+    <h1>Welcome to Registration Portal</h1>
+    <p>Register yoursself and access all sevices easily.</p>
+    
+    <div class="features">
+        <div><a href="registration/index.html">Easy Registration</a></div>
+        <div><a href="login/index.html" id="log">Secure Login</a></div>
+    </div>
+     <div><button class="btn" ><a href="registration/index.html" id="reg">Register Now</a></button></div>
+    <h2>Why Choose us?</h2>
+    <div class="why">
+        <p>Fast Registration</p>
+        <P>Secure Data</P>
+        <p>User Friendly Interface</p>
+
+    </div>
+    </div>
+    <script>
+        function darkmode(){
+            document.body.classList.toggle("darkmode");
+            let btn=
+            document.getElementById("btn");
+            if(document.body.classList.contains("darkmode")){
+            btn.innerHTML="Light";
+            }
+            else{
+                btn.innerHTML="Dark";
+            }
+
+            
+        }
+    </script>
+</body>
+</html>

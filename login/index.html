@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        body{
+            background-color: rgb(188, 235, 235);
+        }
+        div{
+            background-color: whitesmoke;
+            height: 250px;
+            width: 500px;
+            padding: 20px;
+            margin-top:200px;
+            margin-left: 150px;
+            border-radius: 50px;
+        }
+        .user{
+            border-radius: 50px;
+        }
+        #btn{
+            border-radius: 50px;
+            height: 40px;
+            width: 100px;
+          background-image: linear-gradient(45deg,#df4881,#c430d7);
+          color: white;
+        }
+    </style>
+</head>
+<body>
+    <form id="loginForm">
+  <div>
+    <h2>Login:-</h2>
+          Username:<input type="text" id="name" class="user" required>
+          <p></p><br>
+          Password:<input type="Password" id="pwd" class="user" required>
+          <p></p><br>
+         <input type="submit" id="btn" value="submit">
+       </div>
+  </form>
+  <script src="login.js"></script>
+</body>
+</html>

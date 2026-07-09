@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.a{
+ height: 60px;
+margin: 0px;
+padding: 10px;
+background-color: rgb(215, 237, 250);
+ font-size: 15 px;
+display: flex;
+text-align: center;
+justify-content: left;
+gap: 25px;
+box-shadow: 0px 4px 14px 0px rgb(193, 205, 153);
+position: relative;
+user-select: none;
+}
+.a a{
+    text-decoration: none;
+    color: black;
+}
+.darkmode{
+    background: #393434;
+    color: rgb(22, 20, 20);
+    cursor: pointer;
+    
+}
+.dark{
+    margin-left: auto;
+    padding: 8px 15px;
+    background-image: linear-gradient(45deg,#df4881,#c430d7);
+     color: white;
+    border-radius: 8px;
+}
+.a:hover{
+    cursor: pointer;
+    
+}
+
+.a div{
+    position: relative;
+    display: inline-block;
+    
+}
+.a div:hover{
+font-weight:bold;
+}
+.a div::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: #87bfca;
+    transition-duration: 0.3s;
+    }
+    .a div:hover::after{
+        width: 100%;
+        color: blue;
+        transition: 0.5s;
+    } 
+    .search input{
+    width: 300px;
+    justify-content: center;
+    height: 30px;
+    border-radius: 10px;
+    margin-left:50px;
+}
+body{
+    background-color:  rgb(233, 242, 247);
+    user-select: none;
+    margin: 0%;
+    padding: 0px;
+}
+#h{
+    text-align: center;
+}
+#head{
+    text-align: center;
+    font-size: larger;
+}
+.btn{
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-image: linear-gradient(45deg,#df4881,#c430d7);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15pxrgba(37,99,235,0.3);
+}
+
+    </style>
+</head>
+<body>
+    <diV class="a">
+        <div><a href="../index.html">Home</a></div>
+        <div><a href="index.html">Registration Form </a></div>
+        <div><a href="../about/index.html">About</a></div>
+        <div class="search">
+        <input type="search" placeholder="🔍search" >
+        </div>
+        <div class="dark" id="btn" onclick="darkmode()">Dark</div>
+    </diV>
+    <h1 id="h"> Student Registration Form</h1>
+    <form id="registerForm">
+        <fieldset>
+        <legend id="head"><b>Student's Information</b></legend>
+            <label for="sname">Student's Name:</label>
+        <input type="text" name="sname" id="name" placeholder="Enter Your Name" required><br/>
+        <p></p><br>
+          <label for="age">Age:</label>
+        <input type="text" name="age" id="age" placeholder="Enter Your Age"><br/>
+         <p></p><br>
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob" name="dob"><br/>
+         <p></p><br>
+        <label for="gender">Gender:</label><br/>
+        <input type="radio" id="male" name="gender" value="Male">Male</input><br/>
+        <input type="radio" id="female" name="gender" value="Female">Female</input><br/>
+        <input type="radio" id="other" name="gender" value="Other">Other</input><br/>
+         <p></p><br>
+         <label for="fname">Father's \Gaurdian's Name:</label>
+        <input type="text" name="fname" id="fname" placeholder=" Enter Father's Name" ><br/>
+         <p></p><br>
+         <label for="education">Education Qualification:</label>
+        <input type="text" name="education" id="education" placeholder="Enter Education Qualification" ><br/>
+         <p></p><br>
+          <label for="college">School\ College Name:</label>
+        <input type="text" name="college" id="college" placeholder="Enter School\College name"><br/>
+         <p></p><br>
+        <label for="contact number">Contact Number:</label>
+        <input type="tel" name="contact number" id="contact" placeholder="Enter Contact Number" required><br/>
+         <p></p><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Email Id" required><br/>
+         <p></p><br>
+         <label for="branch">Branch:</label><br/>
+        <input type="radio" id="cse" name="branch" value="CSE">CSE</input><br/>
+        <input type="radio" id="ece" name="branch" value="ECE">ECE</input><br/>
+        <input type="radio" id="me" name="branch" value="ME">ME</input><br/>
+         <p></p><br>
+        <label for="address"> Permanent Address:</label>
+        <input type="text" name="address" id="paddress" placeholder="Enter Permanent Address"><br/>
+         <p></p><br>
+          <label for="taddress"> Temporary Address:</label>
+        <input type="text" name="taddress" id="taddress" placeholder="Enter Temporary Address">
+        <p></p><br/>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Create Username" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create Password" required>
+        <br><br>
+        <input type="submit"  class="btn" value="submit" ><br>
+        </fieldset>
+    </form>
+    <script src="register.js">       
+    </script>
+</body>
+</html>
